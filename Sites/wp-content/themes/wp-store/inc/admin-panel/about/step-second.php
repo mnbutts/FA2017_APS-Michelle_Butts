@@ -8,6 +8,7 @@ wp_enqueue_script( 'plugin-install' );
 wp_enqueue_script( 'updates' );
 add_thickbox();
 $wp_store_recommended_plugins = array(
+	'woocommerce' => array( 'recommended' => false ),
 	'8-degree-coming-soon-page' => array( 'recommended' => false ),
 	'nivo-slider-lite'           => array( 'recommended' => false ),
 	'pirate-forms' => array( 'recommended' => false ),
@@ -22,7 +23,7 @@ $wp_store_recommended_plugins = array(
 		$info   = $this->call_plugin_api( $plugin );
 		$icon   = $this->check_for_icon( $info->icons );
 		$active = $this->check_active( $plugin );
-		$url    = $this->create_action_link( $active['needs'], $plugin );
+		$url    = $this->create_action_link( $active['needs'], $plugin, $active['key'] );
 		$label  = '';
 
 		switch ( $active['needs'] ) {

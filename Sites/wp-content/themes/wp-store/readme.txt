@@ -60,6 +60,9 @@ Images
 
 -------------------------------------------------------
 == Changelog ==
+= 1.0.13 =
+* Added Demo Import Functionality in welcome tab.
+
 = 1.0.12 =
 * Wishlist jquery issue fixed.
 * Ajax add to cart issue fixed.

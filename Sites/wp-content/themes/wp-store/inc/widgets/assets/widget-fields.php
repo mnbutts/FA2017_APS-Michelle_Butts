@@ -757,7 +757,7 @@ if(is_admin()):
                 'remove' => __('Remove', 'wp-store')
             ));
             wp_enqueue_style( 'wp-store-font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css' );
-            wp_enqueue_script( 'wp-store-admin', get_template_directory_uri() . '/inc/js/admin.js', array('jquery'), '1', true );
+            
            wp_enqueue_script( 'wp-store-custom-control-admin', get_template_directory_uri().'/inc/js/admin-control.js', array( 'jquery' ), '20160623', true );
             }
             else{

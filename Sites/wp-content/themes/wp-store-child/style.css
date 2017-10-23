@@ -1,0 +1,38 @@
+/*
+Theme Name: WP Store Child Theme
+Template: wp-store
+Description: A child theme of wp store theme.
+Author: Michelle Butts
+Version: 0.1.0
+*/
+
+@import url("../wp-store/style.css");
+
+
+.buttom-header .site-branding .site-title {
+    font-family: HiyidaScript;
+}
+.main-navigation ul {
+    float: right;
+}
+/*.buttom-header .site-branding .site-title {
+    color: #008080;
+}
+.main-navigation ul li:hover a, .main-navigation ul li.current-menu-item a, .main-navigation ul li.current_page_item a, .main-navigation ul li.current-menu-ancestor a {
+    color: #008080;
+}
+.button:before, #cta-section .cta-content a:before, .bttn a:before, .woocommerce #respond input#submit.alt:before, .woocommerce a.button.alt:before, .woocommerce button.button.alt:before, .woocommerce input.button.alt:before, .woocommerce a.button:before, .woocommerce button.button:before, .added_to_cart:before, .edit-link a:before {
+    content: "";
+    background: #008080;
+}*/
+.buttom-header .site-branding .site-title {
+    font-size: 45px;
+}
+#promo-section .promo-block {
+    margin-right: 1%;
+    margin-left: 1%;
+    width: 48%;
+}
+#promo-section .promo-text .category > a {
+    display: none;
+}

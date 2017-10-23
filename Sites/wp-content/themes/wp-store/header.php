@@ -89,7 +89,7 @@
 									?>
 
 
-									<a href="<?php echo wp_login_url(); ?>" class="login">
+								<a href="<?php echo esc_url(get_permalink( get_option('woocommerce_myaccount_page_id') )); ?>" class="login">
 										<i class="fa fa-sign-in"></i>
 										<?php esc_html_e('Login / Signup','wp-store'); ?>
 									</a>
