@@ -6,8 +6,8 @@
 			'priority' => '30',
 			'capability' => 'edit_theme_options',
 			'theme_supports' => '',
-			'title' => __( 'Homepage Settings', 'wp-store' ),
-			'description' => __( 'Setup homepage section. Some sections are available from widgets', 'wp-store' ),
+			'title' => __( 'Homepage Settings', 'wp-store-child' ),
+			'description' => __( 'Setup homepage section. Some sections are available from widgets', 'wp-store-child' ),
 			)
 		);
 
@@ -16,9 +16,9 @@
 			'wp_store_homepage_setting_slider',
 			array(
 				'priority'        => '10',
-				'title' => __( 'Slider Section', 'wp-store' ),
+				'title' => __( 'Slider Section', 'wp-store-child' ),
 				'capability' => 'edit_theme_options',
-				'description' => __( 'Setup the slider settings for homepage', 'wp-store' ),
+				'description' => __( 'Setup the slider settings for homepage', 'wp-store-child' ),
 				'panel' => 'wp_store_homepage_setting'
 				)
 			);
@@ -36,8 +36,8 @@
 					'wp_store_homepage_setting_slider_option',
 					array(
 						'type' => 'switch',
-						'label' => __('Enable Slider', 'wp-store'),
-						'description' => __('Select Yes to show Slider on homepage.','wp-store'),
+						'label' => __('Enable Slider', 'wp-store-child'),
+						'description' => __('Select Yes to show Slider on homepage.','wp-store-child'),
 						'section' => 'wp_store_homepage_setting_slider',
 						)
 					)
@@ -57,8 +57,8 @@
 				'wp_store_homepage_setting_slider_category',
 				array(
 					'type'	=>	'select',
-					'label' => __('Select a category to show in slider','wp-store'),
-					'description' => __('Note: Parent Category are only listed in dropdown.','wp-store'),
+					'label' => __('Select a category to show in slider','wp-store-child'),
+					'description' => __('Note: Parent Category are only listed in dropdown.','wp-store-child'),
 					'section' => 'wp_store_homepage_setting_slider',
 					'choices' => wp_store_parent_category_lists(),
 					)
@@ -78,7 +78,7 @@
 					'wp_store_homepage_setting_slider_pager',
 					array(
 						'type' => 'switch_yesno',
-						'label' => __('Slider Pager', 'wp-store'),
+						'label' => __('Slider Pager', 'wp-store-child'),
 						'section' => 'wp_store_homepage_setting_slider',
 						'output' => array('Yes', 'No')
 						)
@@ -99,7 +99,7 @@
 					'wp_store_homepage_setting_slider_controls',
 					array(
 						'type' => 'switch_yesno',
-						'label' => __('Slider Controls', 'wp-store'),
+						'label' => __('Slider Controls', 'wp-store-child'),
 						'section' => 'wp_store_homepage_setting_slider',
 						'output' => array('Yes', 'No')
 						)
@@ -119,13 +119,13 @@
 				'wp_store_homepage_setting_slider_transition_type',
 				array(
 					'type' => 'select',
-					'label' => __('Transition Type(Slide/Fade)', 'wp-store'),
+					'label' => __('Transition Type(Slide/Fade)', 'wp-store-child'),
 					'section' => 'wp_store_homepage_setting_slider',
 					'choices' => array(
-				         	'fade' => __('Fade', 'wp-store'),
-				          	'backSlide' => __('Back Slide', 'wp-store'),
-				          	'goDown' => __('Go Down Slide', 'wp-store'),
-				          	'fadeUp' => __('Fade Up', 'wp-store'),
+				         	'fade' => __('Fade', 'wp-store-child'),
+				          	'backSlide' => __('Back Slide', 'wp-store-child'),
+				          	'goDown' => __('Go Down Slide', 'wp-store-child'),
+				          	'fadeUp' => __('Fade Up', 'wp-store-child'),
 				      	)
 					)
 				);
@@ -144,7 +144,7 @@
 					'wp_store_homepage_setting_slider_transition_auto',
 					array(
 						'type' => 'switch_yesno',
-						'label' => __('Auto Play', 'wp-store'),
+						'label' => __('Auto Play', 'wp-store-child'),
 						'section' => 'wp_store_homepage_setting_slider',
 						'output' => array('Yes', 'No')
 						)
@@ -163,7 +163,7 @@
 				'wp_store_homepage_setting_slider_transition_speed',
 				array(
 					'type' => 'number',
-					'label' => __('Auto Play Speed', 'wp-store'),
+					'label' => __('Auto Play Speed', 'wp-store-child'),
 					'section' => 'wp_store_homepage_setting_slider',
 					'active_callback' => 'wp_store_sutoplay_on'
 					)
@@ -183,8 +183,8 @@
 					'wp_store_homepage_setting_slider_caption',
 					array(
 						'type' => 'switch_yesno',
-						'label' => __('Slider Caption', 'wp-store'),
-						'description' => __('Select Yes to show titles and description over Slider', 'wp-store'),
+						'label' => __('Slider Caption', 'wp-store-child'),
+						'description' => __('Select Yes to show titles and description over Slider', 'wp-store-child'),
 						'section' => 'wp_store_homepage_setting_slider',
 						'output' => array('Yes', 'No')
 						)
@@ -195,11 +195,11 @@
 		$wp_customize->add_section(
 			'wp_store_homepage_setting_promo',
 			array(
-				'title'           =>      __('Promotional Block Section', 'wp-store'),
+				'title'           =>      __('Promotional Block Section', 'wp-store-child'),
 				'priority'        =>      '20',
 				'capability' => 'edit_theme_options',
 				'panel' => 'wp_store_homepage_setting',
-				'description' => __('Choose category for the promotional block below the slider.','wp-store'),
+				'description' => __('Choose category for the promotional block below the slider.','wp-store-child'),
 				)
 			);
 
@@ -216,8 +216,8 @@
 					'wp_store_homepage_setting_promo_option',
 					array(
 						'type' => 'switch',
-						'label' => __('Enable Promotional Block Section', 'wp-store'),
-						'description' => __('Select Yes to show Promotional Block on homepage.','wp-store'),
+						'label' => __('Enable Promotional Block Section', 'wp-store-child'),
+						'description' => __('Select Yes to show Promotional Block on homepage.','wp-store-child'),
 						'section' => 'wp_store_homepage_setting_promo',
 						)
 					)
@@ -236,8 +236,8 @@
 			$wp_customize->add_control(
 					'wp_store_homepage_setting_promo_category',
 					array(
-						'label' => __('Choose Category','wp-store'),
-						'description' => __('Note: Parent Category are only listed in dropdown.','wp-store'),
+						'label' => __('Choose Category','wp-store-child'),
+						'description' => __('Parent Category are only listed in dropdown.','wp-store-child'),
 						'section' => 'wp_store_homepage_setting_promo',
 						'type'	=> 'select',
 						'choices' => wp_store_parent_category_lists(),
@@ -248,7 +248,7 @@
 		$wp_customize->add_section(
 			'wp_store_homepage_setting_widget1',
 			array(
-				'title'           =>      __('Widget Area 1 Section', 'wp-store'),
+				'title'           =>      __('Widget Area 1 Section', 'wp-store-child'),
 				'priority'        =>      '30',
 				'capability' => 'edit_theme_options',
 				'panel' => 'wp_store_homepage_setting'
@@ -269,8 +269,8 @@
 					'wp_store_homepage_setting_widget1_option',
 					array(
 						'type' => 'switch',
-						'label' => __('Enable Widget Area 1 Section', 'wp-store'),
-						'description' => __('Select Yes to show Widget Area 1 on homepage.','wp-store'),
+						'label' => __('Enable Widget Area 1 Section', 'wp-store-child'),
+						'description' => __('Select Yes to show Widget Area 1 on homepage.','wp-store-child'),
 						'section' => 'wp_store_homepage_setting_widget1',
 						)
 					)
@@ -292,7 +292,7 @@
 		                'section' => 'wp_store_homepage_setting_widget1',
 		                'settings' => 'wp_store_homepage_setting_widget1_instruction',
 		                'input_attrs' => array(
-		                    'info' => '<p>'.__('Go to ','wp-store').'<a href="'.admin_url('widgets.php').'" target="_blank" >'.__('Widgets','wp-store').'</a>'.__(' and add widgets in Widget Area One','wp-store').'.</p>',
+		                    'info' => '<p>'.__('Go to ','wp-store-child').'<a href="'.admin_url('widgets.php').'" target="_blank" >'.__('Widgets','wp-store-child').'</a>'.__(' and add widgets in Widget Area One','wp-store-child').'.</p>',
 		                	),
 		            	)
         			)
@@ -302,7 +302,7 @@
 		$wp_customize->add_section(
 			'wp_store_homepage_setting_cta',
 			array(
-				'title'           =>      __('Call to Action(CTA) Section', 'wp-store'),
+				'title'           =>      __('Call to Action(CTA) Section', 'wp-store-child'),
 				'priority'        =>      '40',
 				'capability' => 'edit_theme_options',
 				'panel' => 'wp_store_homepage_setting'
@@ -322,8 +322,8 @@
 					'wp_store_homepage_setting_cta_option',
 					array(
 						'type' => 'switch',
-						'label' => __('Enable CTA Section', 'wp-store'),
-						'description' => __('Select Yes to show Call to action on homepage.','wp-store'),
+						'label' => __('Enable CTA Section', 'wp-store-child'),
+						'description' => __('Select Yes to show Call to action on homepage.','wp-store-child'),
 						'section' => 'wp_store_homepage_setting_cta',
 						)
 					)
@@ -343,7 +343,7 @@
 				'wp_store_homepage_setting_cta_title',
 				array(
 					'section'       =>      'wp_store_homepage_setting_cta',
-					'label'         =>      __('CTA Section Title', 'wp-store'),
+					'label'         =>      __('CTA Section Title', 'wp-store-child'),
 					'type'          =>      'text'
 					)
 				);
@@ -362,7 +362,7 @@
 				'wp_store_homepage_setting_cta_subtitle',
 				array(
 					'section'       =>      'wp_store_homepage_setting_cta',
-					'label'         =>      __('CTA Section Sub Title', 'wp-store'),
+					'label'         =>      __('CTA Section Sub Title', 'wp-store-child'),
 					'type'          =>      'text'
 					)
 				);
@@ -381,7 +381,7 @@
 				'wp_store_homepage_setting_cta_desc',
 				array(
 					'section'       =>      'wp_store_homepage_setting_cta',
-					'label'         =>      __('CTA Section Description', 'wp-store'),
+					'label'         =>      __('CTA Section Description', 'wp-store-child'),
 					'type'          =>      'textarea'
 					)
 				);
@@ -399,7 +399,7 @@
 				'wp_store_homepage_setting_cta_readmore_link',
 				array(
 					'section'       =>      'wp_store_homepage_setting_cta',
-					'label'         =>      __('Readmore Button link', 'wp-store'),
+					'label'         =>      __('Readmore Button link', 'wp-store-child'),
 					'type'          =>      'text',
 					)
 				);
@@ -408,7 +408,7 @@
 			$wp_customize->add_setting(
 				'wp_store_homepage_setting_cta_readmore',
 				array(
-					'default'       =>      __('Read More','wp-store'),
+					'default'       =>      __('Read More','wp-store-child'),
 					'sanitize_callback'     =>  'wp_store_sanitize_text',
 					'transport' => 'postMessage',
 					)
@@ -418,7 +418,7 @@
 				'wp_store_homepage_setting_cta_readmore',
 				array(
 					'section'       =>      'wp_store_homepage_setting_cta',
-					'label'         =>      __('Readmore Button Text', 'wp-store'),
+					'label'         =>      __('Readmore Button Text', 'wp-store-child'),
 					'type'          =>      'text',
 					)
 				);
@@ -436,8 +436,8 @@
                 new WP_Customize_Image_Control($wp_customize,
                     'wp_store_homepage_setting_cta_bg_image',
                     array(
-                        'label' => __('CTA Section Image', 'wp-store'),
-                        'description' => __('Choose image for CTA Section','wp-store'),
+                        'label' => __('CTA Section Image', 'wp-store-child'),
+                        'description' => __('Choose image for CTA Section','wp-store-child'),
                         'section' => 'wp_store_homepage_setting_cta',
                         'setting' => 'wp_store_homepage_setting_cta_bg_image'
                         )
@@ -450,7 +450,7 @@
 		$wp_customize->add_section(
 			'wp_store_homepage_setting_product',
 			array(
-				'title'           =>      __('Product Section', 'wp-store'),
+				'title'           =>      __('Product Section', 'wp-store-child'),
 				'priority'        =>      '45',
 				'capability' => 'edit_theme_options',
 				'panel' => 'wp_store_homepage_setting'
@@ -471,8 +471,8 @@
 					'wp_store_homepage_setting_product_option',
 					array(
 						'type' => 'switch',
-						'label' => __('Enable Product Section', 'wp-store'),
-						'description' => __('Select Yes to show Product Section on homepage.','wp-store'),
+						'label' => __('Enable Product Section', 'wp-store-child'),
+						'description' => __('Select Yes to show Product Section on homepage.','wp-store-child'),
 						'section' => 'wp_store_homepage_setting_product',
 						)
 					)
@@ -494,7 +494,7 @@
 		                'section' => 'wp_store_homepage_setting_product',
 		                'settings' => 'wp_store_homepage_setting_product_instruction',
 		                'input_attrs' => array(
-		                    'info' => '<p>'.__('Go to ','wp-store').'<a href="'.admin_url('widgets.php').'" target="_blank" >'.__('Widgets','wp-store').'</a>'.__(' and add widgets in Product Widget Area','wp-store').'.</p>',
+		                    'info' => '<p>'.__('Go to ','wp-store-child').'<a href="'.admin_url('widgets.php').'" target="_blank" >'.__('Widgets','wp-store-child').'</a>'.__(' and add widgets in Product Widget Area','wp-store-child').'.</p>',
 		                	),
 		            	)
         			)
@@ -504,7 +504,7 @@
 		$wp_customize->add_section(
 			'wp_store_homepage_setting_widget2',
 			array(
-				'title'           =>      __('Widget Area 2 Section', 'wp-store'),
+				'title'           =>      __('Widget Area 2 Section', 'wp-store-child'),
 				'priority'        =>      '60',
 				'capability' => 'edit_theme_options',
 				'panel' => 'wp_store_homepage_setting'
@@ -525,8 +525,8 @@
 					'wp_store_homepage_setting_widget2_option',
 					array(
 						'type' => 'switch',
-						'label' => __('Enable Widget Area 2 Section', 'wp-store'),
-						'description' => __('Select Yes to show Widget Area 2 on homepage.','wp-store'),
+						'label' => __('Enable Widget Area 2 Section', 'wp-store-child'),
+						'description' => __('Select Yes to show Widget Area 2 on homepage.','wp-store-child'),
 						'section' => 'wp_store_homepage_setting_widget2',
 						)
 					)
@@ -548,7 +548,7 @@
 		                'section' => 'wp_store_homepage_setting_widget2',
 		                'settings' => 'wp_store_homepage_setting_widget2_instruction',
 		                'input_attrs' => array(
-		                    'info' => '<p>'.__('Go to ','wp-store').'<a href="'.admin_url('widgets.php').'" target="_blank" >'.__('Widgets','wp-store').'</a>'.__(' and add widgets in Widget Area Two','wp-store').'.</p>',
+		                    'info' => '<p>'.__('Go to ','wp-store-child').'<a href="'.admin_url('widgets.php').'" target="_blank" >'.__('Widgets','wp-store-child').'</a>'.__(' and add widgets in Widget Area Two','wp-store-child').'.</p>',
 		                	),
 		            	)
         			)
@@ -558,7 +558,7 @@
 		$wp_customize->add_section(
 			'wp_store_homepage_setting_blog',
 			array(
-				'title'           =>      __('Blog Section', 'wp-store'),
+				'title'           =>      __('Blog Section', 'wp-store-child'),
 				'priority'        =>      '70',
 				'capability' => 'edit_theme_options',
 				'panel' => 'wp_store_homepage_setting'
@@ -578,8 +578,8 @@
 					'wp_store_homepage_setting_blog_option',
 					array(
 						'type' => 'switch',
-						'label' => __('Enable Blog Section', 'wp-store'),
-						'description' => __('Select Yes to show Blog on homepage.','wp-store'),
+						'label' => __('Enable Blog Section', 'wp-store-child'),
+						'description' => __('Select Yes to show Blog on homepage.','wp-store-child'),
 						'section' => 'wp_store_homepage_setting_blog',
 						)
 					)
@@ -598,7 +598,7 @@
 				'wp_store_homepage_setting_blog_title',
 				array(
 					'section'       =>      'wp_store_homepage_setting_blog',
-					'label'         =>      __('Blog Section Title', 'wp-store'),
+					'label'         =>      __('Blog Section Title', 'wp-store-child'),
 					'type'          =>      'text'
 					)
 				);
@@ -616,9 +616,9 @@
 			$wp_customize->add_control(
 				'wp_store_homepage_setting_blog_category',
 					array(
-						'label' => __('Choose Category','wp-store'),
+						'label' => __('Choose Category','wp-store-child'),
 						'section' => 'wp_store_homepage_setting_blog',
-						'description' => __('Note: Parent Category are only listed in dropdown.','wp-store'),
+						'description' => __('Note: Parent Category are only listed in dropdown.','wp-store-child'),
 						'type'	=> 'select',
 						'choices'	=>	wp_store_parent_category_lists(),
 					)
@@ -628,7 +628,7 @@
 		$wp_customize->add_section(
 			'wp_store_homepage_setting_widget3',
 			array(
-				'title'           =>      __('Widget Area 3 Section', 'wp-store'),
+				'title'           =>      __('Widget Area 3 Section', 'wp-store-child'),
 				'priority'        =>      '80',
 				'capability' => 'edit_theme_options',
 				'panel' => 'wp_store_homepage_setting'
@@ -649,8 +649,8 @@
 					'wp_store_homepage_setting_widget3_option',
 					array(
 						'type' => 'switch',
-						'label' => __('Enable Widget Area 3 Section', 'wp-store'),
-						'description' => __('Select Yes to show Widget Area 3 on homepage.','wp-store'),
+						'label' => __('Enable Widget Area 3 Section', 'wp-store-child'),
+						'description' => __('Select Yes to show Widget Area 3 on homepage.','wp-store-child'),
 						'section' => 'wp_store_homepage_setting_widget3',
 						)
 					)
@@ -672,7 +672,7 @@
 		                'section' => 'wp_store_homepage_setting_widget3',
 		                'settings' => 'wp_store_homepage_setting_widget3_instruction',
 		                'input_attrs' => array(
-		                    'info' => '<p>'.__('Go to ','wp-store').'<a href="'.admin_url('widgets.php').'" target="_blank" >'.__('Widgets','wp-store').'</a>'.__(' and add widgets in Widget Area Three','wp-store').'.</p>',
+		                    'info' => '<p>'.__('Go to ','wp-store-child').'<a href="'.admin_url('widgets.php').'" target="_blank" >'.__('Widgets','wp-store-child').'</a>'.__(' and add widgets in Widget Area Three','wp-store-child').'.</p>',
 		                	),
 		            	)
         			)
@@ -682,7 +682,7 @@
 		$wp_customize->add_section(
 			'wp_store_homepage_setting_widget_icon',
 			array(
-				'title'           =>      __('Widget Icon Area Section', 'wp-store'),
+				'title'           =>      __('Widget Icon Area Section', 'wp-store-child'),
 				'priority'        =>      '90',
 				'capability' => 'edit_theme_options',
 				'panel' => 'wp_store_homepage_setting'
@@ -703,8 +703,8 @@
 					'wp_store_homepage_setting_widget_icon_option',
 					array(
 						'type' => 'switch',
-						'label' => __('Enable Widget Icon Area Section', 'wp-store'),
-						'description' => __('Select Yes to show Widget Icon Area on homepage.','wp-store'),
+						'label' => __('Enable Widget Icon Area Section', 'wp-store-child'),
+						'description' => __('Select Yes to show Widget Icon Area on homepage.','wp-store-child'),
 						'section' => 'wp_store_homepage_setting_widget_icon',
 						)
 					)
@@ -726,7 +726,7 @@
 		                'section' => 'wp_store_homepage_setting_widget_icon',
 		                'settings' => 'wp_store_homepage_setting_widget_icon_instruction',
 		                'input_attrs' => array(
-		                    'info' => '<p>'.__('Go to ','wp-store').'<a href="'.admin_url('widgets.php').'" target="_blank" >'.__('Widgets','wp-store').'</a>'.__(' and add widgets in Widget Icon Area','wp-store').'.</p>',
+		                    'info' => '<p>'.__('Go to ','wp-store-child').'<a href="'.admin_url('widgets.php').'" target="_blank" >'.__('Widgets','wp-store-child').'</a>'.__(' and add widgets in Widget Icon Area','wp-store-child').'.</p>',
 		                	),
 		            	)
         			)
@@ -736,7 +736,7 @@
 		$wp_customize->add_section(
 			'wp_store_homepage_setting_brand',
 			array(
-				'title'           =>      __('Brand Section', 'wp-store'),
+				'title'           =>      __('Brand Section', 'wp-store-child'),
 				'priority'        =>      '100',
 				'capability' => 'edit_theme_options',
 				'panel' => 'wp_store_homepage_setting'
@@ -757,8 +757,8 @@
 					'wp_store_homepage_setting_brand_option',
 					array(
 						'type' => 'switch',
-						'label' => __('Enable Brand Section', 'wp-store'),
-						'description' => __('Select Yes to show Brand on homepage.','wp-store'),
+						'label' => __('Enable Brand Section', 'wp-store-child'),
+						'description' => __('Select Yes to show Brand on homepage.','wp-store-child'),
 						'section' => 'wp_store_homepage_setting_brand',
 						)
 					)
@@ -768,7 +768,7 @@
 			$wp_customize->add_setting(
 				'wp_store_homepage_setting_brand_title',
 				array(
-					'default'       =>  __('Brands We Have','wp-store'),
+					'default'       =>  __('Brands We Have','wp-store-child'),
 					'sanitize_callback'=>  'wp_store_sanitize_text',
 					'transport'		=>	'postMessage',
 					)
@@ -777,7 +777,7 @@
 				'wp_store_homepage_setting_brand_title',
 				array(
 					'section'       =>      'wp_store_homepage_setting_brand',
-					'label'         =>      __('Brand Section Title', 'wp-store'),
+					'label'         =>      __('Brand Section Title', 'wp-store-child'),
 					'type'          =>      'text'
 					)
 				);
@@ -795,9 +795,9 @@
 			$wp_customize->add_control(
 				'wp_store_homepage_setting_brand_category',
 					array(
-						'label' => __('Choose Category','wp-store'),
+						'label' => __('Choose Category','wp-store-child'),
 						'section' => 'wp_store_homepage_setting_brand',
-						'description' => __('Note: Parent Category are only listed in dropdown.','wp-store'),
+						'description' => __('Note: Parent Category are only listed in dropdown.','wp-store-child'),
 						'type'	=> 'select',
 						'choices'	=>	wp_store_parent_category_lists(),
 					)

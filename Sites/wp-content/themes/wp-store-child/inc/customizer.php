@@ -1,6 +1,6 @@
 <?php
 /**
- * WP Store Theme Customizer.
+ * WP Store Child Theme Customizer.
  *
  * @package WP_Store
  */
@@ -15,7 +15,7 @@ function wp_store_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
-	
+
 }
 add_action( 'customize_register', 'wp_store_customize_register' );
 

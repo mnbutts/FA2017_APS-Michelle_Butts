@@ -1,14 +1,14 @@
 <?php
 	//social Settings section
 	   	$wp_customize->add_section(
-		   	'wp_store_social_setting_section', 
+		   	'wp_store_social_setting_section',
 		   	array(
 		       	'priority' => 70,
 				'capability' => 'edit_theme_options',
-		       	'title' => __('Social Settings', 'wp-store'),		       	
+		       	'title' => __('Social Settings', 'wp-store-child'),
 				)
 			);
-		    
+
 		    //socail setting in header
 		    $wp_customize->add_setting(
 		    	'wp_store_social_setting_section_option_header',
@@ -22,18 +22,18 @@
 		   	$wp_customize->add_control(
 		   		new Wp_store_WP_Customize_Switch_Control(
 		   			$wp_customize,
-				   	'wp_store_social_setting_section_option_header', 
+				   	'wp_store_social_setting_section_option_header',
 				   	array(
 				      	'type' => 'switch',
-				      	'label' => __('Enable Disable Social Icons in Header', 'wp-store'),
+				      	'label' => __('Enable Disable Social Icons in Header', 'wp-store-child'),
 				      	'section' => 'wp_store_social_setting_section',
-				      	'setting' => 'wp_store_social_setting_section_option_header',		
-				      	)		      	
+				      	'setting' => 'wp_store_social_setting_section_option_header',
+				      	)
 				   	)
 			   	);
-		    
+
 		    $wp_customize->add_setting(
-		    	'wp_store_social_setting_section_option_footer', 
+		    	'wp_store_social_setting_section_option_footer',
 		    	array(
 		      		'default' => '0',
 		      		'capability' => 'edit_theme_options',
@@ -44,164 +44,164 @@
 		   	$wp_customize->add_control(
 		   		new Wp_store_WP_Customize_Switch_Control(
 		   			$wp_customize,
-			   		'wp_store_social_setting_section_option_footer', 
+			   		'wp_store_social_setting_section_option_footer',
 			   		array(
 				      	'type' => 'switch',
-				      	'label' => __('Enable Disable Social Icons in Footer', 'wp-store'),
+				      	'label' => __('Enable Disable Social Icons in Footer', 'wp-store-child'),
 				      	'section' => 'wp_store_social_setting_section',
-				      	'setting' => 'wp_store_social_setting_section_option_footer',				      	
+				      	'setting' => 'wp_store_social_setting_section_option_footer',
 		     	 		)
 		   			)
-		   		);	
-		   
+		   		);
+
 		   //social facebook link
 		   	$wp_customize->add_setting(
-			   	'wp_store_social_facebook', 
+			   	'wp_store_social_facebook',
 			   	array(
 					'default' => '#',
 			        'sanitize_callback' => 'esc_url_raw',
 					)
 			   	);
-		    
+
 		    $wp_customize->add_control(
 		    	'wp_store_social_facebook',
 		    	array(
 			        'type' => 'text',
-			        'label' => __('Facebook','wp-store'),
+			        'label' => __('Facebook','wp-store-child'),
 			        'section' => 'wp_store_social_setting_section',
 			        'setting' => 'wp_store_social_facebook'
 			    	)
 		    	);
-		    
+
 		    //social twitter link
 		   	$wp_customize->add_setting(
-		   		'wp_store_social_twitter', 
+		   		'wp_store_social_twitter',
 		   		array(
 					'default' => '#',
 			        'sanitize_callback' => 'esc_url_raw',
 					)
 		   		);
-		    
+
 		    $wp_customize->add_control(
 		    	'wp_store_social_twitter',
 		    	array(
 			        'type' => 'text',
-			        'label' => __('Twitter','wp-store'),
+			        'label' => __('Twitter','wp-store-child'),
 			        'section' => 'wp_store_social_setting_section',
 			        'setting' => 'wp_store_social_twitter'
 		    		)
 		    	);
-		    
+
 		    //social googleplus link
 		   	$wp_customize->add_setting(
-			   	'wp_store_social_googleplus', 
+			   	'wp_store_social_googleplus',
 			   	array(
 					'default' => '#',
 			        'sanitize_callback' => 'esc_url_raw',
 					)
 			   	);
-		    
+
 		    $wp_customize->add_control(
 		    	'wp_store_social_googleplus',
 		    	array(
 			        'type' => 'text',
-			        'label' => __('Google Plus','wp-store'),
+			        'label' => __('Google Plus','wp-store-child'),
 			        'section' => 'wp_store_social_setting_section',
 			        'setting' => 'wp_store_social_googleplus'
 			    	)
 		    	);
-		    
+
 		     //social youtube link
 		   	$wp_customize->add_setting(
-		   		'wp_store_social_youtube', 
+		   		'wp_store_social_youtube',
 		   		array(
 					'default' => '#',
 			        'sanitize_callback' => 'esc_url_raw',
 					)
 		   		);
-		    
+
 		    $wp_customize->add_control(
 		    	'wp_store_social_youtube',
 		    	array(
 			        'type' => 'text',
-			        'label' => __('YouTube','wp-store'),
+			        'label' => __('YouTube','wp-store-child'),
 			        'section' => 'wp_store_social_setting_section',
 			        'setting' => 'wp_store_social_youtube'
 			    	)
 		    	);
-		    
+
 		     //social pinterest link
 		   	$wp_customize->add_setting(
-			   	'wp_store_social_pinterest', 
+			   	'wp_store_social_pinterest',
 			   	array(
 					'default' => '#',
 			        'sanitize_callback' => 'esc_url_raw',
 					)
 			   	);
-		    
+
 		    $wp_customize->add_control(
 		    	'wp_store_social_pinterest',
 		    	array(
 			        'type' => 'text',
-			        'label' => __('Pinterest','wp-store'),
+			        'label' => __('Pinterest','wp-store-child'),
 			        'section' => 'wp_store_social_setting_section',
 			        'setting' => 'wp_store_social_pinterest'
 			    	)
 		    	);
-		    
+
 		    //social linkedin link
 		   	$wp_customize->add_setting(
-		   		'wp_store_social_linkedin', 
+		   		'wp_store_social_linkedin',
 		   		array(
 					'default' => '',
 			        'sanitize_callback' => 'esc_url_raw',
 					)
 		   		);
-		    
+
 		    $wp_customize->add_control(
 		    	'wp_store_social_linkedin',
 		    	array(
 			        'type' => 'text',
-			        'label' => __('Linkedin','wp-store'),
+			        'label' => __('Linkedin','wp-store-child'),
 			        'section' => 'wp_store_social_setting_section',
 			        'setting' => 'wp_store_social_linkedin'
 		    		)
 		    	);
-		    
-		    
+
+
 		    //social vimeo link
 		   	$wp_customize->add_setting(
-		   		'wp_store_social_vimeo', 
+		   		'wp_store_social_vimeo',
 		   		array(
 					'default' => '',
 			        'sanitize_callback' => 'esc_url_raw',
 					)
 		   		);
-		    
+
 		    $wp_customize->add_control(
 		    	'wp_store_social_vimeo',
 		    	array(
 			        'type' => 'text',
-			        'label' => __('Vimeo','wp-store'),
+			        'label' => __('Vimeo','wp-store-child'),
 			        'section' => 'wp_store_social_setting_section',
 			        'setting' => 'wp_store_social_vimeo'
 		    		)
 		    	);
-		    
+
 		    //social instagram link
 		   	$wp_customize->add_setting(
-		   		'wp_store_social_instagram', 
+		   		'wp_store_social_instagram',
 		   		array(
 					'default' => '',
 			        'sanitize_callback' => 'esc_url_raw',
 					)
 		   		);
-		    
+
 		    $wp_customize->add_control(
 		    	'wp_store_social_instagram',
 		    	array(
 			        'type' => 'text',
-			        'label' => __('Instagram','wp-store'),
+			        'label' => __('Instagram','wp-store-child'),
 			        'section' => 'wp_store_social_setting_section',
 			        'setting' => 'wp_store_social_instagram'
 			    	)
@@ -209,18 +209,18 @@
 
 		    //social skype link
 		   	$wp_customize->add_setting(
-		   		'wp_store_social_skype', 
+		   		'wp_store_social_skype',
 		   		array(
 					'default' => '',
 			        'sanitize_callback' => 'esc_url_raw',
 					)
 		   		);
-		    
+
 		    $wp_customize->add_control(
 		    	'wp_store_social_skype',
 		    	array(
 			        'type' => 'text',
-			        'label' => __('Skype','wp-store'),
+			        'label' => __('Skype','wp-store-child'),
 			        'section' => 'wp_store_social_setting_section',
 			        'setting' => 'wp_store_social_skype'
 			    	)

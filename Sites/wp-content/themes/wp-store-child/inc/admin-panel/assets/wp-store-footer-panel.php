@@ -5,24 +5,24 @@ $wp_customize->add_panel(
 		'priority' => '60',
 		'capability' => 'edit_theme_options',
 		'theme_supports' => '',
-		'title' => __( 'Footer Settings', 'wp-store' ),
-		'description' => __( 'Setup footer of the site.', 'wp-store' ),
+		'title' => __( 'Footer Settings', 'wp-store-child' ),
+		'description' => __( 'Setup footer of the site.', 'wp-store-child' ),
 		)
 	);
 
 		$wp_customize->add_section(
 			'wp_store_footer_setting_footer_menu',
 			array(
-				'title'           =>      __('Footer Menu', 'wp-store'),
+				'title'           =>      __('Footer Menu', 'wp-store-child'),
 				'priority'        =>      '2',
 				'panel' => 'wp_store_footer_setting'
 				)
 			);
-			
+
 		$wp_customize->add_section(
 			'wp_store_footer_setting_footer_copyright',
 			array(
-				'title'           =>      __('Footer Copyright', 'wp-store'),
+				'title'           =>      __('Footer Copyright', 'wp-store-child'),
 				'priority'        =>      '2',
 				'panel' => 'wp_store_footer_setting'
 				)
@@ -40,8 +40,8 @@ $wp_customize->add_panel(
 				'wp_store_footer_setting_footer_copyright_text',
 				array(
 					'type' => 'textarea',
-					'label' => __('Footer Copyright Area Text', 'wp-store'),
-					'description' => __('Enter text or Html to show in the footer.', 'wp-store'),
+					'label' => __('Footer Copyright Area Text', 'wp-store-child'),
+					'description' => __('Enter text or Html to show in the footer.', 'wp-store-child'),
 					'section' => 'wp_store_footer_setting_footer_copyright',
 					)
 				);
