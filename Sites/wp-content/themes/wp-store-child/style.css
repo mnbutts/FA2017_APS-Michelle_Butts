@@ -1,12 +1,12 @@
 /*
 Theme Name: WP Store Child Theme
-Template: wp-store
+Template: wp-store-child
 Description: A child theme of wp store theme.
 Author: Michelle Buttss
 Version: 0.1.0
 */
 
-@import url("../wp-store/style.css");
+@import url("../wp-store-child/style.css");
 
 html {
   box-sizing: border-box;

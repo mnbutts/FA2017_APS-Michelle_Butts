@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Child Theme Homepage	
+* Template Name: Child Theme Homepage
 *
 * @package WP_Store
 */
@@ -36,10 +36,10 @@ endif;
 			?>
 			<div id='cta-section'>
 				<?php
-				$cta_title = get_theme_mod('wp_store_homepage_setting_cta_title',__('Unique and Elegant Unique Rolex','wp-store'));
-				$cta_sub_title = get_theme_mod('wp_store_homepage_setting_cta_subtitle',__('Milancelos A Lanos de Rolex','wp-store'));
+				$cta_title = get_theme_mod('wp_store_homepage_setting_cta_title',__('Unique and Elegant Unique Rolex','wp-store-child'));
+				$cta_sub_title = get_theme_mod('wp_store_homepage_setting_cta_subtitle',__('Milancelos A Lanos de Rolex','wp-store-child'));
 				$cta_desc = get_theme_mod('wp_store_homepage_setting_cta_desc');
-				$cta_readmore = get_theme_mod('wp_store_homepage_setting_cta_readmore',__('Read More','wp-store'));
+				$cta_readmore = get_theme_mod('wp_store_homepage_setting_cta_readmore',__('Read More','wp-store-child'));
 				$cta_readmore_link = get_theme_mod('wp_store_homepage_setting_cta_readmore_link','#');
 				$image = get_theme_mod('wp_store_homepage_setting_cta_bg_image');
 				?>
@@ -96,7 +96,7 @@ endif;
 	?>
 		<div id="blog-section">
 			<?php
-			$blog_title = get_theme_mod('wp_store_homepage_setting_blog_title',__('Get Updated Blogs','wp-store'));
+			$blog_title = get_theme_mod('wp_store_homepage_setting_blog_title',__('Get Updated Blogs','wp-store-child'));
 			$blog_category = get_theme_mod('wp_store_homepage_setting_blog_category');
 			?>
 			<h3 class="section-title"><span><?php echo esc_html($blog_title);?></span></h3>
@@ -115,7 +115,7 @@ endif;
 					</a>
 					<h5><a href="<?php the_permalink();?>"><?php the_title();?></a></h5>
 					<span class="blog-comment"><i class="fa fa-comment-o"></i>
-					<?php echo esc_html(get_comments_number()).' '. esc_html__('Comments','wp-store');?></span><span class="blog-date"><i class="fa fa-clock-o"></i><?php echo get_the_date(('d,M,Y'),get_the_ID());?></span>
+					<?php echo esc_html(get_comments_number()).' '. esc_html__('Comments','wp-store-child');?></span><span class="blog-date"><i class="fa fa-clock-o"></i><?php echo get_the_date(('d,M,Y'),get_the_ID());?></span>
 					<p><?php the_excerpt();?></p>
 					<?php
 					endif;
@@ -168,7 +168,7 @@ endif;
 	?>
 		<div id="brand-section">
 			<?php
-			$brand_title = get_theme_mod('wp_store_homepage_setting_brand_title',__('Brands We Have','wp-store'));
+			$brand_title = get_theme_mod('wp_store_homepage_setting_brand_title',__('Brands We Have','wp-store-child'));
 			$brand_category = get_theme_mod('wp_store_homepage_setting_brand_category');
 			?>
 			<h3 class="section-title"><span><?php echo esc_html($brand_title);?></span></h3>

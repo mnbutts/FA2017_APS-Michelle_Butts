@@ -280,7 +280,7 @@ function wp_store_slider_section_cb(){
 			if(has_post_thumbnail()):
 				?>
 			<div class = 'promo-block'>
-				<?php the_post_thumbnail('wp-store-medium-image'); print_r(the_category());?>
+				<?php the_post_thumbnail('wp-store-medium-image');?>
 				<div class='promo-text'>
 					<div class='category'><?php the_category(get_the_ID());?></div>
 					<div class='title'><?php the_title();?></div>

@@ -27,7 +27,7 @@
 <body <?php body_class(); ?>>
 	<div class="wp-store-preloader"></div>
 	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'wp-store' ); ?></a>
+		<a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'wp-store-child' ); ?></a>
 		<?php $logo_alignment = get_theme_mod('wp_store_header_settings_logo_alignment','left');?>
 		<header id="masthead" class="site-header <?php echo esc_attr($logo_alignment);?>" role="banner">
 			<div class="top-header">
@@ -54,7 +54,7 @@
 						<div class="my-account">
 							<a href="<?php echo esc_url(get_permalink( get_option('woocommerce_myaccount_page_id') )); ?>">
 								<i class="fa fa-user"></i>
-								<p><?php esc_html_e('My Account','wp-store');?></p>
+								<p><?php esc_html_e('My Account','wp-store-child');?></p>
 							</a>
 						</div>
 						<?php
@@ -63,10 +63,10 @@
 							?>
 							<!-- Wishlist Link -->
 							<div class="wishlist-box">
-								<a class="quick-wishlist" href="<?php echo esc_url($wishlist_url); ?>" title="<?php esc_attr_e('Wishlist','wp-store');?>">
+								<a class="quick-wishlist" href="<?php echo esc_url($wishlist_url); ?>" title="<?php esc_attr_e('Wishlist','wp-store-child');?>">
 									<i class="fa fa-heart"></i>
 									<span class="my-wishlist">
-										<?php esc_html_e('Wishlist','wp-store');
+										<?php esc_html_e('Wishlist','wp-store-child');
 										if(yith_wcwl_count_products() > 0) echo ' ['.absint(yith_wcwl_count_products()).']'; ?></span>
 									</a>
 								</div>
@@ -82,7 +82,7 @@
 									?>
 									<a href="<?php echo esc_url(wp_logout_url()); ?>" class="logout">
 										<i class="fa fa-sign-out "></i>
-										<?php esc_html_e('Logout','wp-store'); ?>
+										<?php esc_html_e('Logout','wp-store-child'); ?>
 									</a>
 									<?php
 								} else{
@@ -91,7 +91,7 @@
 
 								<a href="<?php echo esc_url(get_permalink( get_option('woocommerce_myaccount_page_id') )); ?>" class="login">
 										<i class="fa fa-sign-in"></i>
-										<?php esc_html_e('Login / Signup','wp-store'); ?>
+										<?php esc_html_e('Login / Signup','wp-store-child'); ?>
 									</a>
 									<?php
 								}
@@ -130,7 +130,7 @@
 							</div>
 						</div><!-- .site-branding -->
 						<nav id="site-navigation" class="main-navigation" role="navigation">
-							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'wp-store' ); ?></button>
+							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'wp-store-child' ); ?></button>
 							<div class="close"> &times; </div>
 							<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 						</nav><!-- #site-navigation -->
@@ -147,11 +147,11 @@
 									//echo es_woocommerce_cart_menu();
 								if(wp_store_woocommerce_available()):
 									?>
-								<a class="cart-content" href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'wp-store' ); ?>">
+								<a class="cart-content" href="<?php echo esc_url( WC()->cart->get_cart_url() ); ?>" title="<?php esc_attr_e( 'View your shopping cart', 'wp-store-child' ); ?>">
 									<div class="count">
 										<i class="fa fa-shopping-bag"></i>
-										<span class="cart-title"><?php esc_html_e('Shopping Cart','wp-store');?></span>
-										<span class="cart-count"><?php echo wp_kses_data(sprintf( _n( '%s Item', '%s Items', WC()->cart->get_cart_contents_count(), 'wp-store' ), WC()->cart->get_cart_contents_count() ) ); ?></span>
+										<span class="cart-title"><?php esc_html_e('Shopping Cart','wp-store-child');?></span>
+										<span class="cart-count"><?php echo wp_kses_data(sprintf( _n( '%s Item', '%s Items', WC()->cart->get_cart_contents_count(), 'wp-store-child' ), WC()->cart->get_cart_contents_count() ) ); ?></span>
 										<span class="cart-total"><?php echo wp_kses_data( WC()->cart->get_cart_total() ) ; ?></span>
 									</div>
 								</a>
